@@ -1,0 +1,423 @@
+(base) sashats@sashats-2 refresh % python run_rice50x.py
+Running RICE50+ with settings:
+  region: ed57, baseline: ssp2, policy: bau, cooperation: noncoop
+  impact: kalkuhl, climate: witchco2, savings: fixed
+  nameout: ssp2_bau, datapath: data_ed57/, resdir: ./
+[core_time] Handling 'conf' phase
+[RegionModule] Handling 'conf' phase.
+Configuration file not found at Noneregions.conf. Ensure the file exists.
+[CoreEconomy] Конфигурация экономики: global_savings=fixed, exchange_rate=PPP
+[CoreEconomy] Конфигурация экономики: global_savings=fixed, exchange_rate=PPP
+[core_welfare] Configuring welfare module
+[cooperation_coalitions] Configuration Initialized:
+  calc_nweights: 1
+  coalitions_t_sequence: 1
+Configuration:
+Max Iterations: 100
+Minimum Iterations: 4
+Convergence Tolerance: 0.1
+Max Time (seconds): 3600
+Max Solution Retry: 100
+[mod_macc] Handling 'conf' phase
+[mod_land_use] Handling 'conf' phase
+[hub_climate] Handling 'conf' phase
+[ImpactModule] Configuration with policy=simulation, impact=dice
+[core_policy] Configuring policy...
+[mod_adaptation] Configuring...
+Configuration Phase
+Completed handling all modules for phase='conf', arg2='None'.
+[core_time] Handling 'sets' phase
+[RegionModule] Handling 'sets' phase.
+Region file not found at Noneregions.inc. Ensure the file exists.
+[CoreEconomy] Определены базовые сценарии SSP: ['ssp1', 'ssp2', 'ssp3', 'ssp4', 'ssp5']
+[CoreEconomy] Определены базовые сценарии SSP: ['ssp1', 'ssp2', 'ssp3', 'ssp4', 'ssp5']
+[core_welfare] Unknown phase: sets
+[cooperation_coalitions] Sets Initialized:
+  Coalitions: ['coalition1', 'coalition2', 'coalition3']
+  Map Coalition to Regions: {('coalition1', 'coalition1'): True, ('coalition2', 'coalition2'): True, ('coalition3', 'coalition3'): True}
+  Active Coalitions: {'coalition1': True, 'coalition2': True, 'coalition3': True}
+Sets:
+Iterations: ['i1', 'i2', 'i3', 'i4', 'i5', 'i6', 'i7', 'i8', 'i9', 'i10', 'i11', 'i12', 'i13', 'i14', 'i15', 'i16', 'i17', 'i18', 'i19', 'i20', 'i21', 'i22', 'i23', 'i24', 'i25', 'i26', 'i27', 'i28', 'i29', 'i30', 'i31', 'i32', 'i33', 'i34', 'i35', 'i36', 'i37', 'i38', 'i39', 'i40', 'i41', 'i42', 'i43', 'i44', 'i45', 'i46', 'i47', 'i48', 'i49', 'i50', 'i51', 'i52', 'i53', 'i54', 'i55', 'i56', 'i57', 'i58', 'i59', 'i60', 'i61', 'i62', 'i63', 'i64', 'i65', 'i66', 'i67', 'i68', 'i69', 'i70', 'i71', 'i72', 'i73', 'i74', 'i75', 'i76', 'i77', 'i78', 'i79', 'i80', 'i81', 'i82', 'i83', 'i84', 'i85', 'i86', 'i87', 'i88', 'i89', 'i90', 'i91', 'i92', 'i93', 'i94', 'i95', 'i96', 'i97', 'i98', 'i99', 'i100']
+Variables: ['MIU', 'S']
+Variables to Check: ['MIU', 'S']
+Report Items: ['solvestat', 'modelstat', 'ok']
+[mod_macc] Handling 'sets' phase
+[mod_land_use] Handling 'sets' phase
+Regions: ['region1', 'region2', 'region3']
+[hub_climate] Handling 'sets' phase
+Climate model selected: witchco2
+[ImpactModule] No specific logic for phase 'sets'
+[core_policy] No specific logic for phase 'sets'
+[mod_adaptation] Defining sets...
+Sets Phase
+Completed handling all modules for phase='sets', arg2='None'.
+[core_time] Handling 'include_data' phase
+[RegionModule] Handling 'include_data' phase.
+[RegionModule] Handling 'include_data' phase.
+Loading additional region-related data (if required).
+[CoreEconomy] Загрузка данных экономики (SSP, население, ВВП и т.д.)
+[CoreEconomy] Загрузка данных экономики (SSP, население, ВВП и т.д.)
+[core_welfare] Unknown phase: include_data
+[cooperation_coalitions] Unknown phase: include_data
+Unknown phase: include_data
+[mod_macc] Handling 'include_data' phase
+[mod_land_use] Handling 'include_data' phase
+Baseline land emissions (eland0): {'region1': 2.132728478702159, 'region2': 1.6410722843534775, 'region3': 2.0877401894179473}
+[hub_climate] Handling 'include_data' phase
+Initial TATM: 1.12, Initial TOCEAN: 0.109427
+[ImpactModule] No specific logic for phase 'include_data'
+[core_policy] No specific logic for phase 'include_data'
+[mod_adaptation] Including data...
+Include Data Phase
+Completed handling all modules for phase='include_data', arg2='None'.
+[core_time] Handling 'compute_data' phase
+[RegionModule] Handling 'compute_data' phase.
+[RegionModule] Handling 'compute_data' phase.
+Computing data for regions (if required).
+[CoreEconomy] Вычисление экономических параметров (рост ВВП, базовые нормы сбережений и т.д.)
+[CoreEconomy] Вычисление экономических параметров (рост ВВП, базовые нормы сбережений и т.д.)
+[core_welfare] Computing data
+[cooperation_coalitions] Unknown phase: compute_data
+Unknown phase: compute_data
+[mod_macc] Handling 'compute_data' phase
+[mod_land_use] Handling 'compute_data' phase
+Computing BAU emissions and cumulative emissions
+[hub_climate] Handling 'compute_data' phase
+Computed FORC, TATM, and TOCEAN for time step 1
+Skipping year=2000, region=0: Index t=20 out of bounds for TATM with length 20
+Skipping year=2000, region=1: Index t=20 out of bounds for TATM with length 20
+Skipping year=2000, region=2: Index t=20 out of bounds for TATM with length 20
+Skipping year=2000, region=3: Index t=20 out of bounds for TATM with length 20
+Skipping year=2000, region=4: Index t=20 out of bounds for TATM with length 20
+Skipping year=2000, region=5: Index t=20 out of bounds for TATM with length 20
+Skipping year=2000, region=6: Index t=20 out of bounds for TATM with length 20
+Skipping year=2000, region=7: Index t=20 out of bounds for TATM with length 20
+Skipping year=2000, region=8: Index t=20 out of bounds for TATM with length 20
+Skipping year=2000, region=9: Index t=20 out of bounds for TATM with length 20
+Skipping year=2001, region=0: Index t=21 out of bounds for TATM with length 20
+Skipping year=2001, region=1: Index t=21 out of bounds for TATM with length 20
+Skipping year=2001, region=2: Index t=21 out of bounds for TATM with length 20
+Skipping year=2001, region=3: Index t=21 out of bounds for TATM with length 20
+Skipping year=2001, region=4: Index t=21 out of bounds for TATM with length 20
+Skipping year=2001, region=5: Index t=21 out of bounds for TATM with length 20
+Skipping year=2001, region=6: Index t=21 out of bounds for TATM with length 20
+Skipping year=2001, region=7: Index t=21 out of bounds for TATM with length 20
+Skipping year=2001, region=8: Index t=21 out of bounds for TATM with length 20
+Skipping year=2001, region=9: Index t=21 out of bounds for TATM with length 20
+Skipping year=2002, region=0: Index t=22 out of bounds for TATM with length 20
+Skipping year=2002, region=1: Index t=22 out of bounds for TATM with length 20
+Skipping year=2002, region=2: Index t=22 out of bounds for TATM with length 20
+Skipping year=2002, region=3: Index t=22 out of bounds for TATM with length 20
+Skipping year=2002, region=4: Index t=22 out of bounds for TATM with length 20
+Skipping year=2002, region=5: Index t=22 out of bounds for TATM with length 20
+Skipping year=2002, region=6: Index t=22 out of bounds for TATM with length 20
+Skipping year=2002, region=7: Index t=22 out of bounds for TATM with length 20
+Skipping year=2002, region=8: Index t=22 out of bounds for TATM with length 20
+Skipping year=2002, region=9: Index t=22 out of bounds for TATM with length 20
+Skipping year=2003, region=0: Index t=23 out of bounds for TATM with length 20
+Skipping year=2003, region=1: Index t=23 out of bounds for TATM with length 20
+Skipping year=2003, region=2: Index t=23 out of bounds for TATM with length 20
+Skipping year=2003, region=3: Index t=23 out of bounds for TATM with length 20
+Skipping year=2003, region=4: Index t=23 out of bounds for TATM with length 20
+Skipping year=2003, region=5: Index t=23 out of bounds for TATM with length 20
+Skipping year=2003, region=6: Index t=23 out of bounds for TATM with length 20
+Skipping year=2003, region=7: Index t=23 out of bounds for TATM with length 20
+Skipping year=2003, region=8: Index t=23 out of bounds for TATM with length 20
+Skipping year=2003, region=9: Index t=23 out of bounds for TATM with length 20
+Skipping year=2004, region=0: Index t=24 out of bounds for TATM with length 20
+Skipping year=2004, region=1: Index t=24 out of bounds for TATM with length 20
+Skipping year=2004, region=2: Index t=24 out of bounds for TATM with length 20
+Skipping year=2004, region=3: Index t=24 out of bounds for TATM with length 20
+Skipping year=2004, region=4: Index t=24 out of bounds for TATM with length 20
+Skipping year=2004, region=5: Index t=24 out of bounds for TATM with length 20
+Skipping year=2004, region=6: Index t=24 out of bounds for TATM with length 20
+Skipping year=2004, region=7: Index t=24 out of bounds for TATM with length 20
+Skipping year=2004, region=8: Index t=24 out of bounds for TATM with length 20
+Skipping year=2004, region=9: Index t=24 out of bounds for TATM with length 20
+Skipping year=2005, region=0: Index t=25 out of bounds for TATM with length 20
+Skipping year=2005, region=1: Index t=25 out of bounds for TATM with length 20
+Skipping year=2005, region=2: Index t=25 out of bounds for TATM with length 20
+Skipping year=2005, region=3: Index t=25 out of bounds for TATM with length 20
+Skipping year=2005, region=4: Index t=25 out of bounds for TATM with length 20
+Skipping year=2005, region=5: Index t=25 out of bounds for TATM with length 20
+Skipping year=2005, region=6: Index t=25 out of bounds for TATM with length 20
+Skipping year=2005, region=7: Index t=25 out of bounds for TATM with length 20
+Skipping year=2005, region=8: Index t=25 out of bounds for TATM with length 20
+Skipping year=2005, region=9: Index t=25 out of bounds for TATM with length 20
+Skipping year=2006, region=0: Index t=26 out of bounds for TATM with length 20
+Skipping year=2006, region=1: Index t=26 out of bounds for TATM with length 20
+Skipping year=2006, region=2: Index t=26 out of bounds for TATM with length 20
+Skipping year=2006, region=3: Index t=26 out of bounds for TATM with length 20
+Skipping year=2006, region=4: Index t=26 out of bounds for TATM with length 20
+Skipping year=2006, region=5: Index t=26 out of bounds for TATM with length 20
+Skipping year=2006, region=6: Index t=26 out of bounds for TATM with length 20
+Skipping year=2006, region=7: Index t=26 out of bounds for TATM with length 20
+Skipping year=2006, region=8: Index t=26 out of bounds for TATM with length 20
+Skipping year=2006, region=9: Index t=26 out of bounds for TATM with length 20
+Skipping year=2007, region=0: Index t=27 out of bounds for TATM with length 20
+Skipping year=2007, region=1: Index t=27 out of bounds for TATM with length 20
+Skipping year=2007, region=2: Index t=27 out of bounds for TATM with length 20
+Skipping year=2007, region=3: Index t=27 out of bounds for TATM with length 20
+Skipping year=2007, region=4: Index t=27 out of bounds for TATM with length 20
+Skipping year=2007, region=5: Index t=27 out of bounds for TATM with length 20
+Skipping year=2007, region=6: Index t=27 out of bounds for TATM with length 20
+Skipping year=2007, region=7: Index t=27 out of bounds for TATM with length 20
+Skipping year=2007, region=8: Index t=27 out of bounds for TATM with length 20
+Skipping year=2007, region=9: Index t=27 out of bounds for TATM with length 20
+Skipping year=2008, region=0: Index t=28 out of bounds for TATM with length 20
+Skipping year=2008, region=1: Index t=28 out of bounds for TATM with length 20
+Skipping year=2008, region=2: Index t=28 out of bounds for TATM with length 20
+Skipping year=2008, region=3: Index t=28 out of bounds for TATM with length 20
+Skipping year=2008, region=4: Index t=28 out of bounds for TATM with length 20
+Skipping year=2008, region=5: Index t=28 out of bounds for TATM with length 20
+Skipping year=2008, region=6: Index t=28 out of bounds for TATM with length 20
+Skipping year=2008, region=7: Index t=28 out of bounds for TATM with length 20
+Skipping year=2008, region=8: Index t=28 out of bounds for TATM with length 20
+Skipping year=2008, region=9: Index t=28 out of bounds for TATM with length 20
+Skipping year=2009, region=0: Index t=29 out of bounds for TATM with length 20
+Skipping year=2009, region=1: Index t=29 out of bounds for TATM with length 20
+Skipping year=2009, region=2: Index t=29 out of bounds for TATM with length 20
+Skipping year=2009, region=3: Index t=29 out of bounds for TATM with length 20
+Skipping year=2009, region=4: Index t=29 out of bounds for TATM with length 20
+Skipping year=2009, region=5: Index t=29 out of bounds for TATM with length 20
+Skipping year=2009, region=6: Index t=29 out of bounds for TATM with length 20
+Skipping year=2009, region=7: Index t=29 out of bounds for TATM with length 20
+Skipping year=2009, region=8: Index t=29 out of bounds for TATM with length 20
+Skipping year=2009, region=9: Index t=29 out of bounds for TATM with length 20
+Skipping year=2010, region=0: Index t=30 out of bounds for TATM with length 20
+Skipping year=2010, region=1: Index t=30 out of bounds for TATM with length 20
+Skipping year=2010, region=2: Index t=30 out of bounds for TATM with length 20
+Skipping year=2010, region=3: Index t=30 out of bounds for TATM with length 20
+Skipping year=2010, region=4: Index t=30 out of bounds for TATM with length 20
+Skipping year=2010, region=5: Index t=30 out of bounds for TATM with length 20
+Skipping year=2010, region=6: Index t=30 out of bounds for TATM with length 20
+Skipping year=2010, region=7: Index t=30 out of bounds for TATM with length 20
+Skipping year=2010, region=8: Index t=30 out of bounds for TATM with length 20
+Skipping year=2010, region=9: Index t=30 out of bounds for TATM with length 20
+Computed regional temperatures and damages.
+[ImpactModule] No specific logic for phase 'compute_data'
+[core_policy] Computing data...
+Burden sharing: equal per capita.
+[mod_adaptation] Unknown phase: compute_data
+Completed handling all modules for phase='compute_data', arg2='None'.
+[core_time] Handling 'declare_vars' phase
+[RegionModule] Handling 'declare_vars' phase.
+[CoreEconomy] Объявление переменных экономики (C, Y, I, S и др.)
+[CoreEconomy] Объявление переменных экономики (C, Y, I, S и др.)
+[core_welfare] Declaring variables
+[cooperation_coalitions] Unknown phase: declare_vars
+Unknown phase: declare_vars
+[mod_macc] Handling 'declare_vars' phase
+[mod_land_use] Handling 'declare_vars' phase
+[hub_climate] Handling 'declare_vars' phase
+[ImpactModule] No specific logic for phase 'declare_vars'
+[core_policy] No specific logic for phase 'declare_vars'
+[mod_adaptation] Unknown phase: declare_vars
+Completed handling all modules for phase='declare_vars', arg2='None'.
+[core_time] Handling 'compute_vars' phase
+[RegionModule] Handling 'compute_vars' phase.
+[CoreEconomy] Вычисление значений переменных экономики на основе модели
+[CoreEconomy] Вычисление значений переменных экономики на основе модели
+[core_welfare] Computing variables
+[cooperation_coalitions] Unknown phase: compute_vars
+Unknown phase: compute_vars
+[mod_macc] Handling 'compute_vars' phase
+[mod_land_use] Handling 'compute_vars' phase
+Land use emissions (ELAND): [((1850, 'region1'), 1.6867203648548254e-98), ((1850, 'region2'), 1.2978820650917007e-98), ((1850, 'region3'), 1.6511402783724444e-98), ((1851, 'region1'), 1.4927475228965205e-98), ((1851, 'region2'), 1.148625627606155e-98)]
+[hub_climate] Handling 'compute_vars' phase
+Computed FORC for time step 1: 1.0
+[ImpactModule] Computing variables...
+[core_policy] No specific logic for phase 'compute_vars'
+[mod_adaptation] Computing variables...
+Compute Variables Phase
+Completed handling all modules for phase='compute_vars', arg2='None'.
+Starting optimization loop iteration 0...
+First iteration: Skipping fix_variables phase.
+Applying solver options...
+Option iterlim set to 99900
+Option reslim set to 99999
+Option solprint set to on
+Option limrow set to 0
+Option limcol set to 0
+Option holdFixedAsync set to 1
+Launching solver for regions...
+Simulating solver...
+Starting optimization loop iteration 1...
+Fixing variables from the last intermediate solution...
+Applying solver options...
+Option iterlim set to 99900
+Option reslim set to 99999
+Option solprint set to on
+Option limrow set to 0
+Option limcol set to 0
+Option holdFixedAsync set to 1
+Launching solver for regions...
+Simulating solver...
+Starting optimization loop iteration 2...
+Fixing variables from the last intermediate solution...
+Applying solver options...
+Option iterlim set to 99900
+Option reslim set to 99999
+Option solprint set to on
+Option limrow set to 0
+Option limcol set to 0
+Option holdFixedAsync set to 1
+Launching solver for regions...
+Simulating solver...
+Starting optimization loop iteration 3...
+Fixing variables from the last intermediate solution...
+Applying solver options...
+Option iterlim set to 99900
+Option reslim set to 99999
+Option solprint set to on
+Option limrow set to 0
+Option limcol set to 0
+Option holdFixedAsync set to 1
+Launching solver for regions...
+Simulating solver...
+Starting optimization loop iteration 4...
+Fixing variables from the last intermediate solution...
+Applying solver options...
+Option iterlim set to 99900
+Option reslim set to 99999
+Option solprint set to on
+Option limrow set to 0
+Option limcol set to 0
+Option holdFixedAsync set to 1
+Launching solver for regions...
+Simulating solver...
+Starting optimization loop iteration 5...
+Fixing variables from the last intermediate solution...
+Applying solver options...
+Option iterlim set to 99900
+Option reslim set to 99999
+Option solprint set to on
+Option limrow set to 0
+Option limcol set to 0
+Option holdFixedAsync set to 1
+Launching solver for regions...
+Simulating solver...
+Starting optimization loop iteration 6...
+Fixing variables from the last intermediate solution...
+Applying solver options...
+Option iterlim set to 99900
+Option reslim set to 99999
+Option solprint set to on
+Option limrow set to 0
+Option limcol set to 0
+Option holdFixedAsync set to 1
+Launching solver for regions...
+Simulating solver...
+Starting optimization loop iteration 7...
+Fixing variables from the last intermediate solution...
+Applying solver options...
+Option iterlim set to 99900
+Option reslim set to 99999
+Option solprint set to on
+Option limrow set to 0
+Option limcol set to 0
+Option holdFixedAsync set to 1
+Launching solver for regions...
+Simulating solver...
+Starting optimization loop iteration 8...
+Fixing variables from the last intermediate solution...
+Applying solver options...
+Option iterlim set to 99900
+Option reslim set to 99999
+Option solprint set to on
+Option limrow set to 0
+Option limcol set to 0
+Option holdFixedAsync set to 1
+Launching solver for regions...
+Simulating solver...
+Starting optimization loop iteration 9...
+Fixing variables from the last intermediate solution...
+Applying solver options...
+Option iterlim set to 99900
+Option reslim set to 99999
+Option solprint set to on
+Option limrow set to 0
+Option limcol set to 0
+Option holdFixedAsync set to 1
+Launching solver for regions...
+Simulating solver...
+Starting optimization loop iteration 10...
+Fixing variables from the last intermediate solution...
+Applying solver options...
+Option iterlim set to 99900
+Option reslim set to 99999
+Option solprint set to on
+Option limrow set to 0
+Option limcol set to 0
+Option holdFixedAsync set to 1
+Launching solver for regions...
+Simulating solver...
+[core_time] Handling 'report' phase
+Time periods: []
+First period: set()
+Second period: set()
+Last period: set()
+Last 10 periods: set()
+Fixed periods: set()
+Time step: 5
+Period mapping: {}
+Year mapping: {}
+[RegionModule] Handling 'report' phase.
+[RegionModule] Handling 'report' phase.
+Reporting regional computations and results.
+[CoreEconomy] Неизвестная фаза: report
+[CoreEconomy] Неизвестная фаза: report
+[core_welfare] Reporting data
+Welfare BGE: {}
+Welfare Regional: {}
+Utility: 0
+[cooperation_coalitions] Unknown phase: report
+Unknown phase: report
+[mod_macc] Handling 'report' phase
+[mod_land_use] Handling 'report' phase
+Land-use emissions (ELAND):
+Year: 1850, Region: region1, Emission: 0.00 GtCO2/year
+Year: 1850, Region: region2, Emission: 0.00 GtCO2/year
+Year: 1850, Region: region3, Emission: 0.00 GtCO2/year
+Year: 1851, Region: region1, Emission: 0.00 GtCO2/year
+Year: 1851, Region: region2, Emission: 0.00 GtCO2/year
+Year: 1851, Region: region3, Emission: 0.00 GtCO2/year
+Year: 1852, Region: region1, Emission: 0.00 GtCO2/year
+Year: 1852, Region: region2, Emission: 0.00 GtCO2/year
+Year: 1852, Region: region3, Emission: 0.00 GtCO2/year
+Year: 1853, Region: region1, Emission: 0.00 GtCO2/year
+
+Baseline emissions (eland0):
+Region: region1, Baseline Emission: 2.13 GtCO2/year
+Region: region2, Baseline Emission: 1.64 GtCO2/year
+Region: region3, Baseline Emission: 2.09 GtCO2/year
+
+Decline rate (deland): 0.115
+[hub_climate] Handling 'report' phase
+Climate Report: {'tatm0': 1.12, 'tocean0': 0.109427, 'FORC': {}, 'TATM': {}, 'TOCEAN': {}}
+[ImpactModule] Reporting results...
+Damages: {}
+Damfrac: {}
+Omega: {}
+[core_policy] Reporting policy parameters:
+  policy: None
+  impact: off
+  savings: off
+  cooperation: off
+  burden_share: equal_per_capita
+  ctax_initial: 0
+  cbudget: None
+  tatm_limit: None
+  carbon_debt: False
+[mod_adaptation] Unknown phase: report
+Completed handling all modules for phase='report', arg2='None'.
+
+Quick Analysis Values:
+  tatm2100: 2.5
+  gdp2100: 120000.0
+  world_damfrac2100: 0.03
+  elapsed time (sec): 0.4170238971710205
+
+Saving results to: .//results_ssp2_bau.json (example)
+
+Done. RICE50+ run complete.

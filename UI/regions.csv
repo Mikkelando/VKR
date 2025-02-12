@@ -1,0 +1,19 @@
+region,year,value
+North America,2000,10
+North America,2010,20
+North America,2020,30
+South America,2000,15
+South America,2010,25
+South America,2020,35
+Europe,2000,12
+Europe,2010,22
+Europe,2020,28
+Africa,2000,8
+Africa,2010,18
+Africa,2020,26
+Asia,2000,20
+Asia,2010,30
+Asia,2020,50
+Oceania,2000,5
+Oceania,2010,10
+Oceania,2020,15
